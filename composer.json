@@ -1,0 +1,52 @@
+{
+    "name": "maxmirazh33/yii2-app-skeleton",
+    "description": "Yii 2 Application Skeleton",
+    "keywords": [
+        "yii2",
+        "app",
+        "application template",
+        "application skeleton",
+        "app skeleton",
+        "app template"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/maxmirazh33/yii2-app-skeleton/issues?state=open",
+        "source": "https://github.com/maxmirazh33/yii2-app-skeleton"
+    },
+    "authors": [
+        {
+            "name": "Maxim Kolokolnikov",
+            "email": "maxmirazh33@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "bower-asset/adminlte": "*",
+        "bower-asset/font-awesome": "4.*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "*",
+        "maxmirazh33/yii2-gii": "dev-master"
+    },
+    "repositories": [
+        {
+            "url": "https://github.com/maxmirazh33/yii2-gii.git",
+            "type": "git"
+        }
+    ],
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
