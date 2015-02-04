@@ -58,8 +58,7 @@ use yii\bootstrap\Alert;
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left info">
-                    <i class="fa fa-circle text-success"></i>
-                    <?= Yii::$app->formatter->asDatetime(time(), 'd MMMM YYYY, HH:mm') ?>
+                    <?= Yii::$app->formatter->asDatetime(time(), 'd MMMM Y, HH:mm') ?>
                 </div>
             </div>
 
