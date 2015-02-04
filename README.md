@@ -9,6 +9,10 @@ is a separate Yii application.
 The template is designed to work in a team development environment. It supports
 deploying the application in different environments.
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/maxmirazh33/yii2-app-skeleton/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/maxmirazh33/yii2-app-skeleton/?branch=master)
+[![Code Climate](https://codeclimate.com/github/maxmirazh33/yii2-app-skeleton/badges/gpa.svg)](https://codeclimate.com/github/maxmirazh33/yii2-app-skeleton)
+[![Dependency Status](https://www.versioneye.com/user/projects/54d1fa7d3ca0849531000115/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54d1fa7d3ca0849531000115)
+[![Build Status](https://scrutinizer-ci.com/g/maxmirazh33/yii2-app-skeleton/badges/build.png?b=master)](https://scrutinizer-ci.com/g/maxmirazh33/yii2-app-skeleton/build-status/master)
 
 DIRECTORY STRUCTURE
 -------------------
