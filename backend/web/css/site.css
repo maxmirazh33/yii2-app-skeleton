@@ -94,3 +94,52 @@ a.desc:after {
 .icheckbox_minimal {
     margin-bottom: 3px;
 }
+
+.datepicker.dropdown-menu {
+    min-width: 200px;
+}
+
+.redactor-toolbar {
+    z-index: 1 !important;
+}
+
+.modal-body img {
+    max-width: none !important;
+}
+
+.uploader {
+    overflow: hidden;
+    clear: both;
+}
+
+.fullinput {
+    width: 100%;
+}
+
+.uploader-browse input {
+    border: none;
+    outline: none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    font-size: 100px;
+    position: absolute;
+    cursor: pointer;
+    top: -20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.uploader .btn {
+    overflow: hidden;
+    position: relative;
+    clear: both;
+}
+
+.modal-body img {
+    max-width: 568px !important;
+    max-height: 400px !important;
+    width: auto;
+    height: auto;
+    display: block;
+}

@@ -3,9 +3,11 @@ namespace backend\controllers;
 
 use backend\components\BackendController;
 use backend\components\CrudFilter;
+use vova07\imperavi\actions\GetAction;
 use Yii;
 use yii\filters\AccessControl;
 use backend\models\LoginForm;
+use yii\helpers\Url;
 
 class SiteController extends BackendController
 {
@@ -17,6 +19,30 @@ class SiteController extends BackendController
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
+            ],
+            'images-get' => [
+                'class' => GetAction::className(),
+                'url' => Url::to('@frontendUrl/images', true),
+                'path' => '@frontend/web/images',
+                'options' => ['except' => ['.*']],
+            ],
+            'files-get' => [
+                'class' => GetAction::className(),
+                'url' => Url::to('@frontendUrl/files', true),
+                'path' => '@frontend/web/files',
+                'options' => ['except' => ['.*']],
+                'type' => GetAction::TYPE_FILES,
+            ],
+            'image-upload' => [
+                'class' => 'vova07\imperavi\actions\UploadAction',
+                'url' => Url::to('@frontendUrl/images', true),
+                'path' => '@frontend/web/images',
+            ],
+            'file-upload' => [
+                'class' => 'vova07\imperavi\actions\UploadAction',
+                'url' => Url::to('@frontendUrl/files', true),
+                'path' => '@frontend/web/files',
+                'uploadOnlyImage' => false,
             ],
         ];
     }

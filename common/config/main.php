@@ -8,6 +8,8 @@ return [
         '@common' => dirname(__DIR__),
         '@frontend' => dirname(dirname(__DIR__)) . '/frontend',
         '@backend' => dirname(dirname(__DIR__)) . '/backend',
+        '@frontendUrl' => '/',
+        '@backendUrl' => '/backend',
     ],
     'components' => [
         'cache' => [
