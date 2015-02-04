@@ -61,6 +61,6 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install the application using the following command:
 
 ~~~
-php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta2"
-php composer.phar create-project --prefer-dist --stability=dev maxmirazh33/yii2-app-skeleton
+php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
+php composer.phar create-project --prefer-dist --stability=dev maxmirazh33/yii2-app-skeleton app
 ~~~
