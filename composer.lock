@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6aca292c87fff0afc6750c41e0b36ecb",
+    "hash": "a3fa79f5229201557c430a2c382d68fc",
     "packages": [
         {
             "name": "bower-asset/adminlte",
@@ -155,16 +155,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.60",
+            "version": "3.1.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "da0a365b45b3040219a83c5abb5fcd3a51d7ed89"
+                "reference": "f2c086411d2557fc485c47afb3cecfa6c1de9ee2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/da0a365b45b3040219a83c5abb5fcd3a51d7ed89",
-                "reference": "da0a365b45b3040219a83c5abb5fcd3a51d7ed89",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/f2c086411d2557fc485c47afb3cecfa6c1de9ee2",
+                "reference": "f2c086411d2557fc485c47afb3cecfa6c1de9ee2",
                 "shasum": ""
             },
             "require": {
@@ -521,12 +521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-cropable-image.git",
-                "reference": "0c78841573a9a7038f03273f2c3e9a2435adfd13"
+                "reference": "1a7c4a8248505106d58837ffa373f6c7d2523b10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/0c78841573a9a7038f03273f2c3e9a2435adfd13",
-                "reference": "0c78841573a9a7038f03273f2c3e9a2435adfd13",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/1a7c4a8248505106d58837ffa373f6c7d2523b10",
+                "reference": "1a7c4a8248505106d58837ffa373f6c7d2523b10",
                 "shasum": ""
             },
             "require": {
@@ -612,6 +612,52 @@
                 "mailer"
             ],
             "time": "2014-12-05 14:17:14"
+        },
+        {
+            "name": "voskobovich/yii2-many-many-behavior",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voskobovich/ManyToManyBehavior.git",
+                "reference": "5c0a2de6514fff119b2f7888f7b7f72481cc4f80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voskobovich/ManyToManyBehavior/zipball/5c0a2de6514fff119b2f7888f7b7f72481cc4f80",
+                "reference": "5c0a2de6514fff119b2f7888f7b7f72481cc4f80",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-behavior",
+            "autoload": {
+                "psr-4": {
+                    "voskobovich\\behaviors\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vitaly Voskobovich",
+                    "email": "vitaly@voskobovich.com",
+                    "homepage": "http://voskobovich.com"
+                }
+            ],
+            "description": "This behavior makes it easy to maintain relations many-to-many in the your ActiveRecord model.",
+            "homepage": "https://github.com/voskobovich/ManyToManyBehavior",
+            "keywords": [
+                "Active Record",
+                "Behavior",
+                "many-to-many",
+                "relation",
+                "yii2"
+            ],
+            "time": "2014-12-28 08:45:22"
         },
         {
             "name": "vova07/yii2-imperavi-widget",
@@ -981,11 +1027,11 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-gii.git",
-                "reference": "6592e8872ad42d0c6c3e726bfa153086f5971732"
+                "reference": "fd9266fef8b1f73c128747fbad3c7acff1273a91"
             },
             "require": {
-                "yiisoft/yii2": "*",
-                "yiisoft/yii2-gii": "*"
+                "yiisoft/yii2": "2.*",
+                "yiisoft/yii2-gii": "2.*"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -1004,14 +1050,16 @@
             ],
             "description": "Extended gii for maxmirazh33/yii2-app-skeleton",
             "keywords": [
+                "code generator",
                 "extension",
+                "gii",
                 "yii2"
             ],
             "support": {
                 "issues": "https://github.com/maxmirazh33/yii2-gii/issues?state=open",
                 "source": "https://github.com/maxmirazh33/yii2-gii"
             },
-            "time": "2014-11-21 09:33:29"
+            "time": "2015-02-05 19:12:56"
         },
         {
             "name": "phpspec/php-diff",
@@ -1148,6 +1196,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "maxmirazh33/yii2-uploadable-cropable-image": 20,
+        "voskobovich/yii2-many-many-behavior": 20,
         "maxmirazh33/yii2-gii": 20
     },
     "prefer-stable": false,

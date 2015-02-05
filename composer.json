@@ -31,7 +31,8 @@
         "bower-asset/font-awesome": "4.*",
         "vova07/yii2-imperavi-widget": "*",
         "kartik-v/yii2-widget-datepicker": "*",
-        "maxmirazh33/yii2-uploadable-cropable-image": "dev-master"
+        "maxmirazh33/yii2-uploadable-cropable-image": "dev-master",
+        "voskobovich/yii2-many-many-behavior": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",
