@@ -1,7 +1,7 @@
-Yii 2Application Skeleton
+Yii2 Application Skeleton
 ===================================
 
-Yii 2 Application Skeleton basis on Yii 2 Advanced Application Template.
+Yii2 Application Skeleton basis on Yii2 Advanced Application Template.
 
 The template includes two tiers: frontend, backend, each of which
 is a separate Yii application.
