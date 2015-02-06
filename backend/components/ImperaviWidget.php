@@ -1,4 +1,5 @@
 <?php
+
 namespace backend\components;
 
 use vova07\imperavi\Widget;

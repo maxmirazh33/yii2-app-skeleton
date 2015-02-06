@@ -1027,7 +1027,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-gii.git",
-                "reference": "fd9266fef8b1f73c128747fbad3c7acff1273a91"
+                "reference": "6585a869ec30aa913a0b903ce5acbf9fffab9114"
             },
             "require": {
                 "yiisoft/yii2": "2.*",
@@ -1059,7 +1059,7 @@
                 "issues": "https://github.com/maxmirazh33/yii2-gii/issues?state=open",
                 "source": "https://github.com/maxmirazh33/yii2-gii"
             },
-            "time": "2015-02-05 19:12:56"
+            "time": "2015-02-06 08:46:19"
         },
         {
             "name": "phpspec/php-diff",

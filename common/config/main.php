@@ -1,5 +1,4 @@
 <?php
-
 return [
     'name' => 'Приложение',
     'language' => 'ru-RU',

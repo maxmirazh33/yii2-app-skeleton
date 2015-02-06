@@ -3,7 +3,6 @@
  * @var yii\web\View $this
  */
 
-
 $this->title = 'Панель управления | ' . Yii::$app->name;
 $this->params['title'] = 'Главная';
 ?>

@@ -6,7 +6,6 @@
  */
 
 use yii\helpers\Html;
-
 ?>
 
 <?php $this->beginPage() ?>
