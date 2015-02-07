@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a3fa79f5229201557c430a2c382d68fc",
+    "hash": "ff352d628bf37ab3ab54bbf803ec5b24",
     "packages": [
         {
             "name": "bower-asset/adminlte",
@@ -521,12 +521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-cropable-image.git",
-                "reference": "1a7c4a8248505106d58837ffa373f6c7d2523b10"
+                "reference": "9320a45795836e931bce9101da88d6b54a448466"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/1a7c4a8248505106d58837ffa373f6c7d2523b10",
-                "reference": "1a7c4a8248505106d58837ffa373f6c7d2523b10",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/9320a45795836e931bce9101da88d6b54a448466",
+                "reference": "9320a45795836e931bce9101da88d6b54a448466",
                 "shasum": ""
             },
             "require": {
@@ -559,7 +559,42 @@
                 "jcrop",
                 "yii2"
             ],
-            "time": "2015-02-04 10:27:58"
+            "time": "2015-02-07 15:58:05"
+        },
+        {
+            "name": "maxmirazh33/yii2-uploadable-file",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maxmirazh33/yii2-uploadable-file.git",
+                "reference": "729a5e43d3bad5b2c6c6ef7d16070ef73983b56b"
+            },
+            "require": {
+                "yiisoft/yii2": "2.*",
+                "yiisoft/yii2-bootstrap": "2.*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "maxmirazh33\\file\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxim Kolokolnikov",
+                    "email": "maxmirazh33@gmail.com"
+                }
+            ],
+            "description": "Yii2 extension for upload files",
+            "keywords": [
+                "extension",
+                "file upload",
+                "yii2"
+            ],
+            "time": "2015-02-07 16:06:29"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1027,7 +1062,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-gii.git",
-                "reference": "6585a869ec30aa913a0b903ce5acbf9fffab9114"
+                "reference": "5e36a6476965fad01515af171578882f00f18048"
             },
             "require": {
                 "yiisoft/yii2": "2.*",
@@ -1059,7 +1094,7 @@
                 "issues": "https://github.com/maxmirazh33/yii2-gii/issues?state=open",
                 "source": "https://github.com/maxmirazh33/yii2-gii"
             },
-            "time": "2015-02-06 08:46:19"
+            "time": "2015-02-07 16:51:39"
         },
         {
             "name": "phpspec/php-diff",
@@ -1197,6 +1232,7 @@
     "stability-flags": {
         "maxmirazh33/yii2-uploadable-cropable-image": 20,
         "voskobovich/yii2-many-many-behavior": 20,
+        "maxmirazh33/yii2-uploadable-file": 20,
         "maxmirazh33/yii2-gii": 20
     },
     "prefer-stable": false,

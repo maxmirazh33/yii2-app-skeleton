@@ -136,6 +136,12 @@ a.desc:after {
     clear: both;
 }
 
+.form-group.has-error .uploader {
+    border: 1px solid #f56954 !important;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
 .modal-body img {
     max-width: 568px !important;
     max-height: 400px !important;
