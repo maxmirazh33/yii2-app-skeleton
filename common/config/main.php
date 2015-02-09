@@ -18,5 +18,9 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
         ],
+        'formatter' => [
+            'dateFormat' => 'long',
+            'datetimeFormat' => 'long',
+        ],
     ],
 ];
