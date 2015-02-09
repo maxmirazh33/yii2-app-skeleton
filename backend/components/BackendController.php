@@ -52,8 +52,7 @@ abstract class BackendController extends Controller
      */
     public function actionIndex()
     {
-        $model = new $this->modelClass();
-        $model->scenario = 'search';
+        $model = new $this->modelClass(['scenario' => 'search']);
         $dataProvider = $model->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -81,13 +80,11 @@ abstract class BackendController extends Controller
      */
     public function actionCreate()
     {
-        /**
-         * @var \yii\db\ActiveRecord $model
-         */
+        /** @var $model \yii\db\ActiveRecord */
         $model = new $this->modelClass();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->getPrimaryKey()]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -107,7 +104,7 @@ abstract class BackendController extends Controller
         $model->scenario = 'update';
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->getPrimaryKey()]);
         } else {
             return $this->render('update', [
                 'model' => $model,

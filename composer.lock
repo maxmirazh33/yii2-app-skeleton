@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ff352d628bf37ab3ab54bbf803ec5b24",
+    "hash": "6b3f12ecddc267527539ad627f2b1af8",
     "packages": [
         {
             "name": "bower-asset/adminlte",
@@ -516,17 +516,115 @@
             "time": "2015-01-25 16:29:29"
         },
         {
+            "name": "kartik-v/yii2-widget-datetimepicker",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-datetimepicker.git",
+                "reference": "3e59cc0f074df3b883c045395c6814506e4db7c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datetimepicker/zipball/3e59cc0f074df3b883c045395c6814506e4db7c6",
+                "reference": "3e59cc0f074df3b883c045395c6814506e4db7c6",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\datetime\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Enhanced Yii2 wrapper for the bootstrap datetimepicker plugin (sub repo split from yii2-widgets)",
+            "homepage": "https://github.com/kartik-v/yii2-widget-datetimepicker",
+            "keywords": [
+                "datetime",
+                "extension",
+                "form",
+                "jquery",
+                "picker",
+                "plugin",
+                "select2",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-01-25 16:36:55"
+        },
+        {
+            "name": "kartik-v/yii2-widget-timepicker",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-timepicker.git",
+                "reference": "432a8e166f89c2172fd5b86f6badcd943dbd3bc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-timepicker/zipball/432a8e166f89c2172fd5b86f6badcd943dbd3bc2",
+                "reference": "432a8e166f89c2172fd5b86f6badcd943dbd3bc2",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\time\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Enhanced Yii2 wrapper for the bootstrap timepicker plugin (sub repo split from yii2-widgets)",
+            "homepage": "https://github.com/kartik-v/yii2-widget-timepicker",
+            "keywords": [
+                "bootstrap",
+                "extension",
+                "form",
+                "jquery",
+                "picker",
+                "plugin",
+                "time",
+                "widget",
+                "yii2"
+            ],
+            "time": "2014-11-08 20:01:29"
+        },
+        {
             "name": "maxmirazh33/yii2-uploadable-cropable-image",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-cropable-image.git",
-                "reference": "9320a45795836e931bce9101da88d6b54a448466"
+                "reference": "b478aa4547470d1767a0fb8cd83d8a80c59f5c4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/9320a45795836e931bce9101da88d6b54a448466",
-                "reference": "9320a45795836e931bce9101da88d6b54a448466",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/b478aa4547470d1767a0fb8cd83d8a80c59f5c4a",
+                "reference": "b478aa4547470d1767a0fb8cd83d8a80c59f5c4a",
                 "shasum": ""
             },
             "require": {
@@ -559,7 +657,7 @@
                 "jcrop",
                 "yii2"
             ],
-            "time": "2015-02-07 15:58:05"
+            "time": "2015-02-09 12:39:32"
         },
         {
             "name": "maxmirazh33/yii2-uploadable-file",
@@ -567,7 +665,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-file.git",
-                "reference": "729a5e43d3bad5b2c6c6ef7d16070ef73983b56b"
+                "reference": "165f0d78bf53b39908c942ed343a7f6408ebfe98"
             },
             "require": {
                 "yiisoft/yii2": "2.*",
@@ -594,7 +692,7 @@
                 "file upload",
                 "yii2"
             ],
-            "time": "2015-02-07 16:06:29"
+            "time": "2015-02-08 13:42:59"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1062,7 +1160,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-gii.git",
-                "reference": "5e36a6476965fad01515af171578882f00f18048"
+                "reference": "73df37d108cfc02c88848e17815d6c678f7581a4"
             },
             "require": {
                 "yiisoft/yii2": "2.*",
@@ -1094,7 +1192,7 @@
                 "issues": "https://github.com/maxmirazh33/yii2-gii/issues?state=open",
                 "source": "https://github.com/maxmirazh33/yii2-gii"
             },
-            "time": "2015-02-07 16:51:39"
+            "time": "2015-02-09 18:48:03"
         },
         {
             "name": "phpspec/php-diff",
