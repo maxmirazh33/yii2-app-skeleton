@@ -83,20 +83,12 @@ a.desc:after {
     font-family: sans-serif !important;
 }
 
-.dropdown-menu {
-    width: 175px !important;
-}
-
 .content, .content-header {
     color: #3f3f3f !important;
 }
 
 .icheckbox_minimal {
     margin-bottom: 3px;
-}
-
-.datepicker.dropdown-menu {
-    min-width: 200px;
 }
 
 .redactor-toolbar {
@@ -148,4 +140,19 @@ a.desc:after {
     width: auto;
     height: auto;
     display: block;
+}
+
+.btn-right {
+    float: right;
+    margin-left: 3px;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
 }
