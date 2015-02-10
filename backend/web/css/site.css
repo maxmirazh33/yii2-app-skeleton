@@ -156,3 +156,20 @@ a.desc:after {
     display: table;
     clear: both;
 }
+
+ul.dropdown-menu {
+    width: 175px !important;
+}
+
+.table img {
+    max-height: 150px !important;
+    max-width: 200px !important;
+}
+
+/*.form-control {*/
+    /*width: auto;*/
+/*}*/
+
+/*form .form-control {*/
+    /*width: 100%;*/
+/*}*/
