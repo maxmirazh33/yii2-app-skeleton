@@ -619,12 +619,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-cropable-image.git",
-                "reference": "b478aa4547470d1767a0fb8cd83d8a80c59f5c4a"
+                "reference": "99efdf789799bceac53bc2b5c2722ae89ecaa1f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/b478aa4547470d1767a0fb8cd83d8a80c59f5c4a",
-                "reference": "b478aa4547470d1767a0fb8cd83d8a80c59f5c4a",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/99efdf789799bceac53bc2b5c2722ae89ecaa1f0",
+                "reference": "99efdf789799bceac53bc2b5c2722ae89ecaa1f0",
                 "shasum": ""
             },
             "require": {
@@ -657,7 +657,7 @@
                 "jcrop",
                 "yii2"
             ],
-            "time": "2015-02-09 12:39:32"
+            "time": "2015-02-11 16:51:59"
         },
         {
             "name": "maxmirazh33/yii2-uploadable-file",
@@ -665,7 +665,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-file.git",
-                "reference": "165f0d78bf53b39908c942ed343a7f6408ebfe98"
+                "reference": "4078a43c20e4d3af500bb2d78bf08a06c301d1f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-file/zipball/4078a43c20e4d3af500bb2d78bf08a06c301d1f6",
+                "reference": "4078a43c20e4d3af500bb2d78bf08a06c301d1f6",
+                "shasum": ""
             },
             "require": {
                 "yiisoft/yii2": "2.*",
@@ -677,6 +683,7 @@
                     "maxmirazh33\\file\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -692,7 +699,7 @@
                 "file upload",
                 "yii2"
             ],
-            "time": "2015-02-08 13:42:59"
+            "time": "2015-02-11 16:48:40"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1160,7 +1167,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-gii.git",
-                "reference": "51ec58490564c296dfd47f053bfab061e43b8adf"
+                "reference": "57b3e48dced69e54b01a7dccbd3a9bac1d700e37"
             },
             "require": {
                 "yiisoft/yii2": "2.*",
@@ -1192,7 +1199,7 @@
                 "issues": "https://github.com/maxmirazh33/yii2-gii/issues?state=open",
                 "source": "https://github.com/maxmirazh33/yii2-gii"
             },
-            "time": "2015-02-10 20:20:17"
+            "time": "2015-02-11 18:11:22"
         },
         {
             "name": "phpspec/php-diff",
