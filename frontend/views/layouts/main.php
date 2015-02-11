@@ -29,7 +29,7 @@ AppAsset::register($this);
 <?= $content ?>
 
 <footer>
-        <p>&copy; <?= Yii::$app->name ?> <?= date('Y') ?></p>
+    <p>&copy; <?= Yii::$app->name ?> <?= date('Y') ?></p>
 </footer>
 
 <?php $this->endBody(); ?>

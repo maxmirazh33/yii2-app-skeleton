@@ -23,9 +23,11 @@ BackendAsset::register($this);
 </head>
 
 <body class="skin-blue<?= Yii::$app->controller->layout == 'base' ? ' bg-black' : '' ?>">
+
 <?php $this->beginBody(); ?>
 <?= $content ?>
 <?php $this->endBody(); ?>
+
 </body>
 
 </html>

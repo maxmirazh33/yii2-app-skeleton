@@ -1,5 +1,4 @@
 <?php
-
 namespace backend\models;
 
 use yii\base\Object;
@@ -7,11 +6,29 @@ use yii\web\IdentityInterface;
 
 class User extends Object implements IdentityInterface
 {
+    /**
+     * @var integer
+     */
     public $id;
+    /**
+     * @var string
+     */
     public $username;
+    /**
+     * @var string
+     */
     public $password;
+    /**
+     * @var string
+     */
     public $authKey;
+    /**
+     * @var string
+     */
     public $accessToken;
+    /**
+     * @var array list of users
+     */
     private static $users = [
         'admin' => [
             'id' => 'admin',

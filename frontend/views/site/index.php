@@ -4,6 +4,4 @@
  */
 
 $this->title = Yii::$app->name;
-?>
-
-<?= Yii::$app->name ?>
+echo Yii::$app->name;

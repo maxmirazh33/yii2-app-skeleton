@@ -1,5 +1,4 @@
 <?php
-
 namespace backend\components;
 
 use yii\base\ActionFilter;
@@ -7,7 +6,13 @@ use yii\web\NotFoundHttpException;
 
 class CrudFilter extends ActionFilter
 {
+    /**
+     * @var array actions allowed to owner controller
+     */
     public $actions = [];
+    /**
+     * @inheritdoc
+     */
     public $only = [
         'index',
         'create',
@@ -16,6 +21,9 @@ class CrudFilter extends ActionFilter
         'view',
     ];
 
+    /**
+     * @inheritdoc
+     */
     public function beforeFilter($event)
     {
         $action = $this->owner->action;

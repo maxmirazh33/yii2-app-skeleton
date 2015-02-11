@@ -1,5 +1,4 @@
 <?php
-
 namespace backend\components;
 
 use yii\filters\AccessControl;
@@ -14,7 +13,7 @@ use yii\web\NotFoundHttpException;
 abstract class BackendController extends Controller
 {
     /**
-     * @var \yii\db\ActiveRecord name of model class for this controller
+     * @var string name of model class for this controller
      */
     public $modelClass;
 
@@ -84,7 +83,7 @@ abstract class BackendController extends Controller
         $model = new $this->modelClass();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->getPrimaryKey()]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -104,7 +103,7 @@ abstract class BackendController extends Controller
         $model->scenario = 'update';
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->getPrimaryKey()]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -121,12 +120,11 @@ abstract class BackendController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-
         return $this->redirect(['index']);
     }
 
     /**
-     * Finds the Test model based on its primary key value.
+     * Finds the model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
      * @return \yii\db\ActiveRecord the loaded model

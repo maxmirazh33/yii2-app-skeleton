@@ -66,8 +66,10 @@ class Menu extends \yii\widgets\Menu
             }
             $lines[] = Html::tag($tag, $menu, $options);
         }
+
         return implode("\n", $lines);
     }
+
     /**
      * @inheritdoc
      */
@@ -101,6 +103,7 @@ class Menu extends \yii\widgets\Menu
             return strtr($template, $replace);
         }
     }
+
     /**
      * @inheritdoc
      */
@@ -138,6 +141,7 @@ class Menu extends \yii\widgets\Menu
                 $active = true;
             }
         }
+
         return array_values($items);
     }
 }

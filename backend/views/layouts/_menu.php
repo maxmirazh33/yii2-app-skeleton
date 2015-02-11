@@ -4,10 +4,8 @@
  */
 
 use backend\components\Menu;
-?>
 
-<!-- sidebar menu: : style can be found in sidebar.less -->
-<?= Menu::widget([
+echo Menu::widget([
     'options' => ['class' => 'sidebar-menu'],
     //samples
     'items' => [
@@ -28,4 +26,4 @@ use backend\components\Menu;
             ]
         ],
     ]
-]) ?>
+]);

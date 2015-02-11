@@ -1,5 +1,4 @@
 <?php
-
 namespace backend\controllers;
 
 use backend\components\BackendController;
@@ -75,11 +74,18 @@ class SiteController extends BackendController
         ];
     }
 
+    /**
+     * @inheritdoc
+     */
     public function actionIndex()
     {
         return $this->render('index');
     }
 
+    /**
+     * Action for login in app
+     * @return string|\yii\web\Response
+     */
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
@@ -97,6 +103,10 @@ class SiteController extends BackendController
         }
     }
 
+    /**
+     * Action for logout from app
+     * @return \yii\web\Response
+     */
     public function actionLogout()
     {
         Yii::$app->user->logout();

@@ -1,5 +1,4 @@
 <?php
-
 namespace backend\components;
 
 use vova07\imperavi\Widget;
@@ -11,7 +10,8 @@ class ImperaviWidget extends Widget
     /**
      * @inheritdoc
      */
-    public function init(){
+    public function init()
+    {
         parent::init();
 
         $this->settings = ArrayHelper::merge(
