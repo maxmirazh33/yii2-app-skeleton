@@ -173,3 +173,14 @@ ul.dropdown-menu {
 /*form .form-control {*/
     /*width: 100%;*/
 /*}*/
+
+.btn.glyphicon-plus:before,
+.btn.glyphicon-list:before,
+.btn.glyphicon-pencil:before,
+.btn.glyphicon-trash:before,
+.btn.glyphicon-eye-open:before,
+.btn.glyphicon-ok:before {
+    font-family: "Glyphicons Halflings";
+    margin-right: 5px;
+    font-size: 0.8em;
+}
