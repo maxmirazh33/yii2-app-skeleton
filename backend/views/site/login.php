@@ -23,8 +23,7 @@ $this->title = 'Вход | Панель управления | ' . Yii::$app->na
     </div>
 
     <div class="footer">
-        <?= Html::submitButton('Войти',
-            ['class' => 'btn bg-olive btn-block', 'name' => 'login-button']) ?>
+        <?= Html::submitButton('Войти', ['class' => 'btn bg-olive btn-block', 'name' => 'login-button']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
