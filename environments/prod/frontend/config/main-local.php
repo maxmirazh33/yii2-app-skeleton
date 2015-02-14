@@ -1,2 +1,8 @@
 <?php
-return [];
+return [
+    'components' => [
+        'request' => [
+            'cookieValidationKey' => '',
+        ],
+    ],
+];

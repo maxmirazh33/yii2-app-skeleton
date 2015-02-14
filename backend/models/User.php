@@ -34,7 +34,7 @@ class User extends Object implements IdentityInterface
             'id' => 'admin',
             'username' => 'admin',
             'password' => 'admin',
-            'authKey' => 'testadminkey',
+            'authKey' => 'admin-key',
             'accessToken' => 'admin-token',
         ],
     ];

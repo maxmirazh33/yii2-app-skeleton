@@ -1,12 +1,9 @@
 <?php
 return [
     'components' => [
-        'request' => [
-            'cookieValidationKey' => 'ksp92hd8hwef',
-        ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
+            'dsn' => 'mysql:host=localhost;dbname=yii2-app-skeleton',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',

@@ -422,16 +422,16 @@
         },
         {
             "name": "kartik-v/yii2-krajee-base",
-            "version": "v1.7.3",
+            "version": "v1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "a6bd683be7a50720e4a3c8efd74b80bf5331dd69"
+                "reference": "01e9fa8c19970070d0aba5b16a7bfd8c241bc7f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/a6bd683be7a50720e4a3c8efd74b80bf5331dd69",
-                "reference": "a6bd683be7a50720e4a3c8efd74b80bf5331dd69",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/01e9fa8c19970070d0aba5b16a7bfd8c241bc7f9",
+                "reference": "01e9fa8c19970070d0aba5b16a7bfd8c241bc7f9",
                 "shasum": ""
             },
             "require": {
@@ -464,20 +464,20 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-25 16:21:06"
+            "time": "2015-02-13 03:36:35"
         },
         {
             "name": "kartik-v/yii2-widget-datepicker",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-datepicker.git",
-                "reference": "b10b054c65a0bdc98a34e0a23fc19fa48fd1da2a"
+                "reference": "14b17ce4188fa1eaeb3e37d4d9551ed10de6efe4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/b10b054c65a0bdc98a34e0a23fc19fa48fd1da2a",
-                "reference": "b10b054c65a0bdc98a34e0a23fc19fa48fd1da2a",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/14b17ce4188fa1eaeb3e37d4d9551ed10de6efe4",
+                "reference": "14b17ce4188fa1eaeb3e37d4d9551ed10de6efe4",
                 "shasum": ""
             },
             "require": {
@@ -513,7 +513,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-01-25 16:29:29"
+            "time": "2015-02-13 08:20:37"
         },
         {
             "name": "kartik-v/yii2-widget-datetimepicker",
@@ -1167,7 +1167,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-gii.git",
-                "reference": "1ebd255c149959fe793ed474b00013bf7e0edfbf"
+                "reference": "59fc61035851bca7bb26a64a6a2f42b42c8347bb"
             },
             "require": {
                 "yiisoft/yii2": "2.*",
@@ -1199,7 +1199,7 @@
                 "issues": "https://github.com/maxmirazh33/yii2-gii/issues?state=open",
                 "source": "https://github.com/maxmirazh33/yii2-gii"
             },
-            "time": "2015-02-11 19:51:34"
+            "time": "2015-02-14 09:23:59"
         },
         {
             "name": "phpspec/php-diff",

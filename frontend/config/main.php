@@ -25,7 +25,7 @@ return [
             'errorAction' => 'site/error',
         ],
         'request' => [
-            'baseUrl' => ''
+            'baseUrl' => '',
         ]
     ],
     'params' => $params,

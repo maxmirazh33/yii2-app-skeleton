@@ -17,11 +17,6 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * Default app action
-     *
-     * @return string
-     */
     public function actionIndex()
     {
         return $this->render('index');
