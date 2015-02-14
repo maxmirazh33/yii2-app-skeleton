@@ -19,7 +19,8 @@ class ImperaviWidget extends Widget
             [
                 'lang' => 'ru',
                 'minHeight' => 200,
-                'pastePlainText' => true,
+                'buttonSource' => true,
+                'replaceDivs' => false,
                 'plugins' => [
                     'clips',
                     'filemanager',
@@ -28,7 +29,6 @@ class ImperaviWidget extends Widget
                     'fontsize',
                     'imagemanager',
                     'table',
-                    //'textdirection',
                     'video',
                     'fullscreen',
                 ],
