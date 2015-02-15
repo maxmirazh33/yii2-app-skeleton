@@ -1,5 +1,5 @@
 <?php
-return [
+$config = [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
@@ -15,3 +15,12 @@ return [
         ],
     ],
 ];
+
+if (!YII_ENV_TEST) {
+    $config['bootstrap'][] = 'debug';
+    $config['modules']['debug'] = 'yii\debug\Module';
+    $config['bootstrap'][] = 'gii';
+    $config['modules']['gii'] = 'maxmirazh33\gii\Module';
+}
+
+return $config;
