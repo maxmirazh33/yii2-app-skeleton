@@ -3,8 +3,7 @@ Yii2 Application Skeleton
 
 Yii2 Application Skeleton basis on Yii2 Advanced Application Template.
 
-The template includes two tiers: frontend, backend, each of which
-is a separate Yii application.
+The template includes three tiers: front end, back end, and console, each of which is a separate Yii application.
 
 The template is designed to work in a team development environment. It supports
 deploying the application in different environments.
@@ -22,6 +21,12 @@ common
     config/              contains shared configurations
     mail/                contains view files for e-mails
     models/              contains model classes used in both backend and frontend
+console
+    config/              contains console configurations
+    controllers/         contains console controllers (commands)
+    migrations/          contains database migrations
+    models/              contains console-specific model classes
+    runtime/             contains files generated during runtime
 backend
     assets/              contains application assets such as JavaScript and CSS
     components/          contains end user's components
@@ -64,3 +69,19 @@ You can then install the application using the following command:
 php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
 php composer.phar create-project --prefer-dist --stability=dev maxmirazh33/yii2-app-skeleton app
 ~~~
+
+
+GETTING STARTED
+---------------
+
+After you install the application, you have to conduct the following steps to initialize
+the installed application. You only need to do these once for all.
+
+1. Run command `init` to initialize the application with a specific environment.
+2. Create a new database and adjust the `components['db']` configuration in `common/config/main-local.php` accordingly.
+3. Set document root of your Web server `/path/to/app/`:
+
+- for frontend use the URL `http://app/`
+- for backend use the URL `http://app/backend/`
+
+To login into the backend application use credentials in `backend\models\User::$users`.
