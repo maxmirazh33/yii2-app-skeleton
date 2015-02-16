@@ -1,5 +1,9 @@
 <?php
-$config = [
+return [
+    'bootstrap' => ['gii'],
+    'modules' => [
+        'gii' => 'yii\gii\Module',
+    ],
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
@@ -8,19 +12,5 @@ $config = [
             'password' => '',
             'charset' => 'utf8',
         ],
-        'mailer' => [
-            'class' => 'yii\swiftmailer\Mailer',
-            'viewPath' => '@common/mail',
-            'useFileTransport' => true,
-        ],
     ],
 ];
-
-if (!YII_ENV_TEST) {
-    $config['bootstrap'][] = 'debug';
-    $config['modules']['debug'] = 'yii\debug\Module';
-    $config['bootstrap'][] = 'gii';
-    $config['modules']['gii'] = 'maxmirazh33\gii\Module';
-}
-
-return $config;
