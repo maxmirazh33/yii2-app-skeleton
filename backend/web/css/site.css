@@ -184,3 +184,8 @@ ul.dropdown-menu {
     margin-right: 5px;
     font-size: 0.8em;
 }
+
+div.required label:after {
+    content: " *";
+    color: #f56954;
+}

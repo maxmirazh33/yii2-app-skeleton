@@ -665,12 +665,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-file.git",
-                "reference": "69e5d8591f7a141ac6f498e6c3f2b448e68f5f52"
+                "reference": "cb767d49998ca66531b9fc6873b9de1abc9982b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-file/zipball/69e5d8591f7a141ac6f498e6c3f2b448e68f5f52",
-                "reference": "69e5d8591f7a141ac6f498e6c3f2b448e68f5f52",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-file/zipball/cb767d49998ca66531b9fc6873b9de1abc9982b5",
+                "reference": "cb767d49998ca66531b9fc6873b9de1abc9982b5",
                 "shasum": ""
             },
             "require": {
@@ -699,7 +699,7 @@
                 "file upload",
                 "yii2"
             ],
-            "time": "2015-02-12 16:14:45"
+            "time": "2015-02-16 07:09:51"
         },
         {
             "name": "swiftmailer/swiftmailer",
