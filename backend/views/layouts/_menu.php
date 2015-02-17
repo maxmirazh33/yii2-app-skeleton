@@ -7,23 +7,12 @@ use backend\components\Menu;
 
 echo Menu::widget([
     'options' => ['class' => 'sidebar-menu'],
-    //samples
     'items' => [
         [
-            'label' => 'Меню',
-            'url' => ['test'],
-            'icon' => 'fa-dashboard',
-            'active' => Yii::$app->controller->id == 'test',
-        ],
-        [
-            'label' => 'Меню2',
+            'label' => 'Настройки',
+            'url' => ['/settings'],
             'icon' => 'fa-gear',
-            'items' => [
-                [
-                    'label' => 'Меню3',
-                    'url' => ['/site/index'],
-                ],
-            ]
+            'active' => Yii::$app->controller->id == 'settings',
         ],
     ]
 ]);

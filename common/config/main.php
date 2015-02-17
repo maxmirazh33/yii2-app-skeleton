@@ -37,5 +37,8 @@ return [
             'class' => 'yii\swiftmailer\Mailer',
             'viewPath' => '@common/mail',
         ],
+        'settings' => [
+            'class' => 'common\components\Settings',
+        ],
     ],
 ];
