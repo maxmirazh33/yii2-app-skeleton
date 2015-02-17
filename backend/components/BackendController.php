@@ -132,7 +132,7 @@ abstract class BackendController extends Controller
      */
     protected function findModel($id)
     {
-        if (($model = call_user_func(array($this->modelClass, 'findOne'), ['id' => $id])) !== null) {
+        if (($model = call_user_func([$this->modelClass, 'findOne'], ['id' => $id])) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('Страница не найдена.');
