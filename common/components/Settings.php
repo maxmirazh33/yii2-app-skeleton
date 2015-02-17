@@ -1,8 +1,11 @@
 <?php
 namespace common\components;
 
+use yii\caching\Cache;
 use yii\db\ActiveRecord;
+use yii\helpers\ArrayHelper;
 use yii\validators\Validator;
+use Yii;
 
 /**
  * @property string $name
@@ -61,9 +64,22 @@ class Settings extends ActiveRecord
         return parent::beforeValidate();
     }
 
+    /**
+     * @inheritdoc
+     */
+    public function afterSave($insert, $changedAttributes)
+    {
+        $cache = Yii::$app->cache;
+        if ($cache instanceof Cache) {
+            $cache->delete('settings');
+        }
+
+        parent::afterSave($insert, $changedAttributes);
+    }
+
     public static function getDataForDetailView()
     {
-        $models = static::find()->all();
+        $models = static::getAll();
         $ret = [];
         foreach ($models as $model) {
             $ret['model'][$model->name] = $model->value;
@@ -79,16 +95,27 @@ class Settings extends ActiveRecord
 
     public static function getAll()
     {
+        $cache = Yii::$app->cache;
+        if ($cache instanceof Cache) {
+            $models = $cache->get('settings');
+            if ($models === false) {
+                $models = static::find()->all();
+                $cache->set('settings', $models);
+            }
+
+            return $models;
+        }
+
         return static::find()->all();
     }
 
     public static function get($name)
     {
-        $model = static::findOne($name);
-        if ($model === null) {
-            return null;
+        $models = ArrayHelper::index(static::getAll(), 'name');
+        if (array_key_exists($name, $models)) {
+            return $models[$name]->value;
         }
 
-        return $model->value;
+        return null;
     }
 }

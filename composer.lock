@@ -619,12 +619,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-cropable-image.git",
-                "reference": "eae1cd66c6063960c34f696a012868ebe5784f08"
+                "reference": "0ab3af3b07fb0f1f5791b54bd0a3a42df34f1da5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/eae1cd66c6063960c34f696a012868ebe5784f08",
-                "reference": "eae1cd66c6063960c34f696a012868ebe5784f08",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/0ab3af3b07fb0f1f5791b54bd0a3a42df34f1da5",
+                "reference": "0ab3af3b07fb0f1f5791b54bd0a3a42df34f1da5",
                 "shasum": ""
             },
             "require": {
@@ -657,7 +657,7 @@
                 "jcrop",
                 "yii2"
             ],
-            "time": "2015-02-12 16:32:54"
+            "time": "2015-02-16 07:12:14"
         },
         {
             "name": "maxmirazh33/yii2-uploadable-file",
@@ -1167,7 +1167,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-gii.git",
-                "reference": "59fc61035851bca7bb26a64a6a2f42b42c8347bb"
+                "reference": "0385b1110e5f81e9bc155ae0277723c853980d78"
             },
             "require": {
                 "yiisoft/yii2": "2.*",
@@ -1199,7 +1199,7 @@
                 "issues": "https://github.com/maxmirazh33/yii2-gii/issues?state=open",
                 "source": "https://github.com/maxmirazh33/yii2-gii"
             },
-            "time": "2015-02-14 09:23:59"
+            "time": "2015-02-17 15:30:14"
         },
         {
             "name": "phpspec/php-diff",
