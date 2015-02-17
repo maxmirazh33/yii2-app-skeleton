@@ -79,7 +79,8 @@ the installed application. You only need to do these once for all.
 
 1. Run command `init` to initialize the application with a specific environment.
 2. Create a new database and adjust the `components['db']` configuration in `common/config/main-local.php` accordingly.
-3. Set document root of your Web server `/path/to/app/`:
+3. Run migrations `php yii migrate`.
+4. Set document root of your Web server `/path/to/app/`:
 
 - for frontend use the URL `http://app/`
 - for backend use the URL `http://app/backend/`
