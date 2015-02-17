@@ -2,7 +2,7 @@
 return [
     'bootstrap' => ['gii'],
     'modules' => [
-        'gii' => 'yii\gii\Module',
+        'gii' => 'maxmirazh33\gii\Module',
     ],
     'components' => [
         'db' => [
