@@ -80,7 +80,8 @@ class Settings extends ActiveRecord
     public static function getDataForDetailView()
     {
         $models = static::getAll();
-        $ret = [];
+        $ret['model'] = [];
+        $ret['attributes'] = [];
         foreach ($models as $model) {
             $ret['model'][$model->name] = $model->value;
             $type = in_array($model->type, ['url', 'email', 'boolean']) ? $model->type : 'text';
