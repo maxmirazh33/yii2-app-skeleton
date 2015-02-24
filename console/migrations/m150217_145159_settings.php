@@ -12,6 +12,7 @@ class m150217_145159_settings extends Migration
         if ($this->db->driverName === 'mysql') {
             $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
         }
+
         $this->createTable('{{%settings}}', [
             'name' => Schema::TYPE_STRING,
             'value' => Schema::TYPE_TEXT . ' NOT NULL',

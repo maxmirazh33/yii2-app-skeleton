@@ -2,8 +2,6 @@
 namespace console\controllers;
 
 use yii\console\controllers\MigrateController;
-use yii\db\Query;
-use yii\helpers\ArrayHelper;
 
 /**
  * @inheritdoc
@@ -79,7 +77,7 @@ class MigrateAllController extends MigrateController
         $file = $this->findFile($class);
         if ($file === null) {
             $this->stderr('Migration file not found.');
-            exit(1);
+            \Yii::$app->end(self::EXIT_CODE_ERROR);
         }
         if (preg_match('/(m(\d{6}_\d{6})_.*?)\.php$/i', $class, $matches)) {
             $class = $matches[1];
