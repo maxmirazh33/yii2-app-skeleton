@@ -14,5 +14,11 @@ echo Menu::widget([
             'icon' => 'fa-gear',
             'active' => Yii::$app->controller->id == 'settings',
         ],
+        [
+            'label' => 'Меню',
+            'url' => ['/menu'],
+            'icon' => 'fa-sitemap',
+            'active' => Yii::$app->controller->id == 'menu',
+        ],
     ]
 ]);
