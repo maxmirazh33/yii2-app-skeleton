@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "bower-asset/adminlte",
-            "version": "1.3.1",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/almasaeed2010/AdminLTE.git",
-                "reference": "5b7d35a2f2c0ee1b8e6cd7acfa235c497f3f616a"
+                "reference": "57fb76966bc7bba09276bffad4cddcde9a311582"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/5b7d35a2f2c0ee1b8e6cd7acfa235c497f3f616a",
-                "reference": "5b7d35a2f2c0ee1b8e6cd7acfa235c497f3f616a",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/57fb76966bc7bba09276bffad4cddcde9a311582",
+                "reference": "57fb76966bc7bba09276bffad4cddcde9a311582",
                 "shasum": ""
             },
             "type": "bower-asset-library"
@@ -619,12 +619,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-cropable-image.git",
-                "reference": "cb66e44f94eb63f1900d5e2901029694d448b3ba"
+                "reference": "4a13e225d6505d65d4c4c9d3fd01abdb5e86bfd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/cb66e44f94eb63f1900d5e2901029694d448b3ba",
-                "reference": "cb66e44f94eb63f1900d5e2901029694d448b3ba",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/4a13e225d6505d65d4c4c9d3fd01abdb5e86bfd2",
+                "reference": "4a13e225d6505d65d4c4c9d3fd01abdb5e86bfd2",
                 "shasum": ""
             },
             "require": {
@@ -657,7 +657,7 @@
                 "jcrop",
                 "yii2"
             ],
-            "time": "2015-02-19 11:40:41"
+            "time": "2015-02-25 09:59:48"
         },
         {
             "name": "maxmirazh33/yii2-uploadable-file",
@@ -665,12 +665,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-file.git",
-                "reference": "a27374a02ac339caf0ae0a5215e9e394e9208dd0"
+                "reference": "81e1f583fd87438fefb8a6744a75a86f557416f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-file/zipball/a27374a02ac339caf0ae0a5215e9e394e9208dd0",
-                "reference": "a27374a02ac339caf0ae0a5215e9e394e9208dd0",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-file/zipball/81e1f583fd87438fefb8a6744a75a86f557416f5",
+                "reference": "81e1f583fd87438fefb8a6744a75a86f557416f5",
                 "shasum": ""
             },
             "require": {
@@ -699,7 +699,7 @@
                 "file upload",
                 "yii2"
             ],
-            "time": "2015-02-19 11:34:42"
+            "time": "2015-02-25 10:01:34"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1167,7 +1167,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-gii.git",
-                "reference": "d47432ad7372e0b29d9d1276d027a8255d50546a"
+                "reference": "d2c809d190af403c55e848e526b945b32d5346a4"
             },
             "require": {
                 "yiisoft/yii2": "2.*",
@@ -1199,7 +1199,7 @@
                 "issues": "https://github.com/maxmirazh33/yii2-gii/issues?state=open",
                 "source": "https://github.com/maxmirazh33/yii2-gii"
             },
-            "time": "2015-02-20 16:41:46"
+            "time": "2015-02-25 18:50:03"
         },
         {
             "name": "phpspec/php-diff",
