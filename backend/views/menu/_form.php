@@ -27,7 +27,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'sort_index')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Добавить' : 'Сохранить', ['class' => $model->isNewRecord ? 'btn btn-success glyphicon-ok' : 'btn btn-primary glyphicon-ok']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Добавить' : 'Сохранить', ['class' => $model->isNewRecord ? 'btn btn-flat btn-success glyphicon-ok' : 'btn btn-flat btn-primary glyphicon-ok']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

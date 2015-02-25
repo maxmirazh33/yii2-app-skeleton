@@ -8,23 +8,40 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Вход | Панель управления | ' . Yii::$app->name;
 ?>
 
-<div class="form-box" id="login-box">
-    <div class="header">Авторизация</div>
-
-    <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
-
-    <div class="body bg-gray">
-        <?= $form->field($model, 'username') ?>
-        <?= $form->field($model, 'password')->passwordInput() ?>
-        <?= $form->field($model, 'rememberMe')->checkbox() ?>
+<div class="login-box">
+    <div class="login-logo">
+        <?= Yii::$app->name ?>
     </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+        <p class="login-box-msg">Авторизация</p>
 
-    <div class="footer">
-        <?= Html::submitButton('Войти', ['class' => 'btn bg-olive btn-block', 'name' => 'login-button']) ?>
+        <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+
+        <div class="form-group has-feedback">
+            <?= $form->field($model, 'username') ?>
+        </div>
+
+        <div class="form-group has-feedback">
+            <?= $form->field($model, 'password')->passwordInput() ?>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-8">
+                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+            </div>
+            <!-- /.col -->
+            <div class="col-xs-4">
+                <?= Html::submitButton('Войти', ['class' => 'btn btn-primary btn-block btn-flat', 'name' => 'login-button']) ?>
+            </div>
+            <!-- /.col -->
+        </div>
+
+        <?php ActiveForm::end(); ?>
+
     </div>
-
-    <?php ActiveForm::end(); ?>
+    <!-- /.login-box-body -->
 </div>
+<!-- /.login-box -->

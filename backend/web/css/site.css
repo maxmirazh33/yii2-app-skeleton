@@ -87,7 +87,7 @@ a.desc:after {
     color: #3f3f3f !important;
 }
 
-.icheckbox_minimal {
+.icheckbox_square-blue {
     margin-bottom: 3px;
 }
 
@@ -194,4 +194,36 @@ ul.dropdown-menu {
 div.required label:after {
     content: " *";
     color: #f56954;
+}
+
+.jumbotron {
+    background-color: #ddd;
+}
+
+.sidebar-menu {
+    margin-top: 10px;
+}
+
+div.summary {
+    margin: 0 0 5px 5px;
+    float: left;
+    width: 45%;
+}
+
+ul.pagination {
+    float: right;
+    margin: 0 5px 5px 0;
+}
+
+table {
+    margin-bottom: 6px !important;
+}
+
+.box div.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span, .pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-radius: 0 !important;
 }

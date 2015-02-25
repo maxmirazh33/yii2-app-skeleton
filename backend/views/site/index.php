@@ -4,7 +4,6 @@
  */
 
 $this->title = 'Панель управления | ' . Yii::$app->name;
-$this->params['title'] = 'Главная';
 ?>
 
 <div class="jumbotron text-center">

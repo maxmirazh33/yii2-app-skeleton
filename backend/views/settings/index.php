@@ -17,7 +17,7 @@ $this->params['title'] = 'Настройки';
 <div class="settings-index">
 
     <p>
-        <?= Html::a('Редактировать', ['edit'], ['class' => 'btn btn-primary glyphicon-pencil']) ?>
+        <?= Html::a('Редактировать', ['edit'], ['class' => 'btn btn-flat btn-primary glyphicon-pencil']) ?>
     </p>
 
     <?= DetailView::widget([

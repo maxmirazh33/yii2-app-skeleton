@@ -15,7 +15,7 @@ $this->params['title'] = 'Добавить пункт меню';
 <div class="menu-create">
 
     <p class="clear">
-        <?= Html::a('Все пункты меню', ['index'], ['class' => 'btn btn-info btn-right glyphicon-list']) ?>
+        <?= Html::a('Все пункты меню', ['index'], ['class' => 'btn btn-flat btn-info btn-right glyphicon-list']) ?>
     </p>
 
     <?= $this->render('_form', [

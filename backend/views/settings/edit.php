@@ -18,7 +18,7 @@ $this->params['title'] = "Редактировать настройки";
 <div class="settings-update">
 
     <p>
-        <?= Html::a('Просмотр', ['index'], ['class' => 'btn btn-primary glyphicon-eye-open']) ?>
+        <?= Html::a('Просмотр', ['index'], ['class' => 'btn btn-flat btn-primary glyphicon-eye-open']) ?>
     </p>
 
     <div class="settings-form">
@@ -44,7 +44,7 @@ $this->params['title'] = "Редактировать настройки";
         ?>
 
         <div class="form-group">
-            <?= Html::submitButton('Сохранить', ['class' => 'btn btn-primary glyphicon-ok']) ?>
+            <?= Html::submitButton('Сохранить', ['class' => 'btn btn-flat btn-primary glyphicon-ok']) ?>
         </div>
 
         <?php ActiveForm::end(); ?>

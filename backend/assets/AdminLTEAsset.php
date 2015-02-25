@@ -13,13 +13,17 @@ class AdminLTEAsset extends AssetBundle
      * @inheritdoc
      */
     public $js = [
-        'js/AdminLTE/app.js'
+        'dist/js/app.js',
+        'plugins/iCheck/icheck.js',
+        'plugins/slimScroll/jquery.slimscroll.js',
     ];
     /**
      * @inheritdoc
      */
     public $css = [
-        'css/AdminLTE.css',
+        'dist/css/AdminLTE.css',
+        'dist/css/skins/skin-blue.css',
+        'plugins/iCheck/all.css',
     ];
     /**
      * @inheritdoc
