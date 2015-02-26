@@ -8,8 +8,6 @@ return [
         '@frontend' => dirname(dirname(__DIR__)) . '/frontend',
         '@backend' => dirname(dirname(__DIR__)) . '/backend',
         '@console' => dirname(dirname(__DIR__)) . '/console',
-        '@frontendUrl' => '/',
-        '@backendUrl' => '/backend',
     ],
     'bootstrap' => ['log'],
     'components' => [
@@ -20,6 +18,13 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'baseUrl' => '/backend',
+        ],
+        'frontendUrlManager' => [
+            'class' => 'yii\web\UrlManager',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'baseUrl' => '',
         ],
         'formatter' => [
             'dateFormat' => 'long',

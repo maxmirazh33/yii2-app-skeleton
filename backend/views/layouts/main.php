@@ -31,7 +31,7 @@ use yii\bootstrap\Alert;
                     <ul class="dropdown-menu">
                         <li class="user-footer">
                             <div class="pull-left">
-                                <?= Html::a('На сайт', '/', ['class' => 'btn btn-default btn-flat']) ?>
+                                <?= Html::a('На сайт', Yii::$app->frontendUrlManager->createUrl('/'), ['class' => 'btn btn-default btn-flat']) ?>
                             </div>
                             <div class="pull-right">
                                 <?= Html::a('Выход', ['/site/logout'], ['class' => 'btn btn-default btn-flat']) ?>

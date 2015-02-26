@@ -22,25 +22,25 @@ class SiteController extends BackendController
             ],
             'images-get' => [
                 'class' => GetAction::className(),
-                'url' => Url::to('@frontendUrl/images', true),
+                'url' => Yii::$app->frontendUrlManager->createUrl('/images', true),
                 'path' => '@frontend/web/images',
                 'options' => ['except' => ['.*']],
             ],
             'files-get' => [
                 'class' => GetAction::className(),
-                'url' => Url::to('@frontendUrl/files', true),
+                'url' => Yii::$app->frontendUrlManager->createUrl('/files', true),
                 'path' => '@frontend/web/files',
                 'options' => ['except' => ['.*']],
                 'type' => GetAction::TYPE_FILES,
             ],
             'image-upload' => [
                 'class' => 'vova07\imperavi\actions\UploadAction',
-                'url' => Url::to('@frontendUrl/images', true),
+                'url' => Yii::$app->frontendUrlManager->createUrl('/images', true),
                 'path' => '@frontend/web/images',
             ],
             'file-upload' => [
                 'class' => 'vova07\imperavi\actions\UploadAction',
-                'url' => Url::to('@frontendUrl/files', true),
+                'url' => Yii::$app->frontendUrlManager->createUrl('/files', true),
                 'path' => '@frontend/web/files',
                 'uploadOnlyImage' => false,
             ],
@@ -110,6 +110,6 @@ class SiteController extends BackendController
     public function actionLogout()
     {
         Yii::$app->user->logout();
-        return $this->redirect('/');
+        return $this->redirect(Yii::$app->frontendUrlManager->createUrl('/'));
     }
 }
