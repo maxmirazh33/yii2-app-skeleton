@@ -15,7 +15,11 @@ abstract class BackendController extends Controller
     /**
      * @var string name of model class for this controller
      */
-    public $modelClass;
+    protected $modelClass;
+    /**
+     * @var string name of search model class for this controller
+     */
+    protected $searchModelClass;
 
     /**
      * @inheritdoc
@@ -51,11 +55,11 @@ abstract class BackendController extends Controller
      */
     public function actionIndex()
     {
-        $model = new $this->modelClass(['scenario' => 'search']);
-        $dataProvider = $model->search(Yii::$app->request->queryParams);
+        $searchModel = $this->createModel($this->getSearchModelClass());
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
-            'model' => $model,
+            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
@@ -80,7 +84,7 @@ abstract class BackendController extends Controller
     public function actionCreate()
     {
         /** @var $model \yii\db\ActiveRecord */
-        $model = new $this->modelClass();
+        $model = $this->createModel($this->getModelClass());
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -132,10 +136,33 @@ abstract class BackendController extends Controller
      */
     protected function findModel($id)
     {
-        if (($model = call_user_func([$this->modelClass, 'findOne'], ['id' => $id])) !== null) {
+        if (($model = call_user_func([$this->getModelClass(), 'findOne'], ['id' => $id])) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('Страница не найдена.');
         }
+    }
+
+    protected function getModelClass()
+    {
+        if ($this->modelClass !== null) {
+            return $this->modelClass;
+        }
+
+        return '\backend\models\\' . ucfirst($this->id);
+    }
+
+    protected function getSearchModelClass()
+    {
+        if ($this->searchModelClass !== null) {
+            return $this->searchModelClass;
+        }
+
+        return '\backend\models\search\\' .ucfirst($this->id);
+    }
+
+    protected function createModel($className)
+    {
+        return new $className;
     }
 }

@@ -3,7 +3,7 @@
  * @var \yii\web\View $this
  */
 
-use backend\components\Menu;
+use backend\widgets\Menu;
 
 echo Menu::widget([
     'options' => ['class' => 'sidebar-menu'],

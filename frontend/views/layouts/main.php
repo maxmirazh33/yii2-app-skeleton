@@ -26,6 +26,10 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody(); ?>
 
+<?= \yii\widgets\Menu::widget([
+    'items' => \frontend\models\Menu::generateItems(),
+]) ?>
+
 <?= $content ?>
 
 <footer>

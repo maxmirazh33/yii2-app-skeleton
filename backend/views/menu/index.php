@@ -1,13 +1,14 @@
 <?php
 /**
  * @var yii\web\View $this
- * @var backend\models\Menu $model
+ * @var backend\models\search\Menu $searchModel
  * @var $dataProvider yii\data\ActiveDataProvider
  */
 
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Url;
+use backend\models\Menu;
 
 $this->title = 'Меню | Панель управления | ' . Yii::$app->name;
 $this->params['breadcrumbs'][] = 'Меню';
@@ -24,13 +25,20 @@ $this->params['title'] = 'Меню';
 
         <?= GridView::widget([
             'dataProvider' => $dataProvider,
-            'filterModel' => $model,
+            'filterModel' => $searchModel,
             'layout' => "{items}\n<div class='row'>{summary}{pager}</div>",
             'columns' => [
                 ['class' => 'yii\grid\SerialColumn'],
                 'id',
                 'label',
-                'url:url',
+                [
+                    'class' => 'yii\grid\DataColumn',
+                    'attribute' => 'url',
+                    'value' => function ($model) {
+                        return Html::a($model->url, Yii::$app->frontendUrlManager->createUrl($model->url));
+                    },
+                    'format' => 'raw',
+                ],
                 [
                     'class' => 'yii\grid\DataColumn',
                     'attribute' => 'parent_id',
@@ -39,7 +47,7 @@ $this->params['title'] = 'Меню';
                             ? Html::a($model->parent->label, Url::toRoute(['/menu/view', 'id' => $model->parent_id]))
                             : Yii::$app->formatter->nullDisplay;
                     },
-                    'filter' => $model->getMenusForDropdown(),
+                    'filter' => (new Menu())->getMenusForDropdown(),
                     'format' => 'raw',
                 ],
                 'sort_index',

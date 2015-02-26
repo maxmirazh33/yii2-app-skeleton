@@ -35,7 +35,7 @@ $this->params['title'] = "Редактировать настройки";
                     echo $form->field($model, "[$name]value")->checkbox();
                     break;
                 case Settings::TYPE_TEXT:
-                    echo $form->field($model, "[$name]value")->widget('backend\components\ImperaviWidget');
+                    echo $form->field($model, "[$name]value")->widget('backend\widgets\ImperaviWidget');
                     break;
                 default:
                     echo $form->field($model, "[$name]value");

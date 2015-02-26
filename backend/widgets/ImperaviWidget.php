@@ -1,5 +1,5 @@
 <?php
-namespace backend\components;
+namespace backend\widgets;
 
 use vova07\imperavi\Widget;
 use yii\helpers\ArrayHelper;

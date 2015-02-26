@@ -18,7 +18,7 @@ DIRECTORY STRUCTURE
 
 ```
 common
-    components/          contains end user's components
+    components/          contains common components
     config/              contains shared configurations
     mail/                contains view files for e-mails
     models/              contains model classes used in both backend and frontend
@@ -31,13 +31,14 @@ console
     runtime/             contains files generated during runtime
 backend
     assets/              contains application assets such as JavaScript and CSS
-    components/          contains end user's components
+    components/          contains backend components
     config/              contains backend configurations
     controllers/         contains Web controller classes
     models/              contains backend-specific model classes
     runtime/             contains files generated during runtime
     views/               contains view files for the Web application
     web/                 contains the entry script and Web resources
+    widgets/             contains backend widgets
 frontend
     assets/              contains application assets such as JavaScript and CSS
     config/              contains frontend configurations

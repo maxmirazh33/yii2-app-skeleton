@@ -2,6 +2,7 @@
 namespace common\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "menu".
@@ -15,7 +16,7 @@ use Yii;
  * @property Menu $parent
  * @property Menu[] $children
  */
-class Menu extends \yii\db\ActiveRecord
+class Menu extends ActiveRecord
 {
     /**
      * @inheritdoc
