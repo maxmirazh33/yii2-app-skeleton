@@ -32,8 +32,9 @@ class Menu extends \common\models\Menu
             $models = static::find()->where(['parent_id' => null])->with('children')->all();
         }
         foreach ($models as $model) {
+            $url = preg_match('/^(http:\/\/|https:\/\/)/', $model->url) ? $model->url : '/' . trim($model->url, '/') . '/';
             $items[] = [
-                'url' => '/' . trim($model->url, '/') . '/',
+                'url' => $url,
                 'label' => $model->label,
                 'items' => static::generateItems($model->children),
             ];
