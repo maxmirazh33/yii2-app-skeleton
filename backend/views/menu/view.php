@@ -30,7 +30,7 @@ $this->params['title'] = "Пункт меню '$model->label'";
             ]
         ) ?>
         <?= Html::a('Все пункты меню', ['index'], ['class' => 'btn btn-flat btn-info btn-right glyphicon-list']) ?>
-        <?= Html::a('Добавить', ['create'], ['class' => 'btn btn-flat btn-success btn-right glyphicon-plus']) ?>
+        <?= Html::a('Добавить пункт', ['create'], ['class' => 'btn btn-flat btn-success btn-right glyphicon-plus']) ?>
     </p>
 
     <div class="box box-primary">

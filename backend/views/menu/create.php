@@ -6,9 +6,9 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Добавить меню | Панель управления | ' . Yii::$app->name;
+$this->title = 'Добавить пункт меню | Панель управления | ' . Yii::$app->name;
 $this->params['breadcrumbs'][] = ['label' => 'Меню', 'url' => ['index']];
-$this->params['breadcrumbs'][] = 'Добавить';
+$this->params['breadcrumbs'][] = 'Добавить пункт';
 $this->params['title'] = 'Добавить пункт меню';
 ?>
 

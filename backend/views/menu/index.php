@@ -17,7 +17,7 @@ $this->params['title'] = 'Меню';
 <div class="menu-index">
 
     <p>
-        <?= Html::a('Добавить', ['create'], ['class' => 'btn btn-flat btn-success glyphicon-plus']) ?>
+        <?= Html::a('Добавить пункт', ['create'], ['class' => 'btn btn-flat btn-success glyphicon-plus']) ?>
     </p>
 
     <div class="box box-primary">
