@@ -21,18 +21,6 @@ class Menu extends ActiveRecord
     /**
      * @inheritdoc
      */
-    public function rules()
-    {
-        return [
-            [['label', 'url'], 'required'],
-            [['parent_id', 'sort_index'], 'integer'],
-            [['label', 'url'], 'string', 'max' => 255]
-        ];
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function attributeLabels()
     {
         return [

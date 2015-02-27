@@ -8,7 +8,6 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Url;
-use backend\models\Menu;
 
 $this->title = 'Меню | Панель управления | ' . Yii::$app->name;
 $this->params['breadcrumbs'][] = 'Меню';
@@ -35,7 +34,12 @@ $this->params['title'] = 'Меню';
                     'class' => 'yii\grid\DataColumn',
                     'attribute' => 'url',
                     'value' => function ($model) {
-                        return Html::a($model->url, Yii::$app->frontendUrlManager->createUrl($model->url));
+                        return Html::a(
+                            $model->url,
+                            preg_match('/^(http:\/\/|https:\/\/)/', $model->url)
+                                ? $model->url
+                                : Yii::$app->frontendUrlManager->createUrl($model->url)
+                        );
                     },
                     'format' => 'raw',
                 ],
@@ -47,7 +51,7 @@ $this->params['title'] = 'Меню';
                             ? Html::a($model->parent->label, Url::toRoute(['/menu/view', 'id' => $model->parent_id]))
                             : Yii::$app->formatter->nullDisplay;
                     },
-                    'filter' => (new Menu())->getMenusForDropdown(),
+                    'filter' => $searchModel->getMenusForDropdown(),
                     'format' => 'raw',
                 ],
                 'sort_index',

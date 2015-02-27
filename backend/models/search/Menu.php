@@ -3,6 +3,8 @@ namespace backend\models\search;
 
 use Yii;
 use yii\data\ActiveDataProvider;
+use yii\db\ActiveQuery;
+use yii\helpers\ArrayHelper;
 
 class Menu extends \common\models\Menu
 {
@@ -45,5 +47,18 @@ class Menu extends \common\models\Menu
             ->andFilterWhere(['like', 'url', $this->url]);
 
         return $dataProvider;
+    }
+
+    /**
+     * @return array as id => label for Menu relation models
+     */
+    public function getMenusForDropdown()
+    {
+        $query = new ActiveQuery($this->className());
+        if (isset($this->id)) {
+            $query->where('id <> :id', [':id' => $this->id]);
+        }
+
+        return ArrayHelper::map($query->all(), 'id', 'label');
     }
 }

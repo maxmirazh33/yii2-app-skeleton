@@ -2,11 +2,10 @@
 namespace backend\models;
 
 use Yii;
-use yii\db\ActiveQuery;
 use yii\helpers\ArrayHelper;
 use yii\base\Model;
 
-class Menu extends \common\models\Menu
+class Menu extends search\Menu
 {
     /**
      * @inheritdoc
@@ -39,18 +38,5 @@ class Menu extends \common\models\Menu
             Model::scenarios(),
             ['update' => static::attributes()]
         );
-    }
-
-    /**
-     * @return array as id => label for Menu relation models
-     */
-    public function getMenusForDropdown()
-    {
-        $query = new ActiveQuery($this->className());
-        if (isset($this->id)) {
-            $query->where('id <> :id', [':id' => $this->id]);
-        }
-
-        return ArrayHelper::map($query->all(), 'id', 'label');
     }
 }
