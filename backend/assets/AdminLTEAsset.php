@@ -8,21 +8,21 @@ class AdminLTEAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vendor/bower/adminlte';
+    public $sourcePath = '@vendor/almasaeed2010/adminlte';
     /**
      * @inheritdoc
      */
     public $js = [
-        'dist/js/app.js',
-        'plugins/iCheck/icheck.js',
-        'plugins/slimScroll/jquery.slimscroll.js',
+        'dist/js/app.min.js',
+        'plugins/iCheck/icheck.min.js',
+        'plugins/slimScroll/jquery.slimscroll.min.js',
     ];
     /**
      * @inheritdoc
      */
     public $css = [
-        'dist/css/AdminLTE.css',
-        'dist/css/skins/skin-blue.css',
+        'dist/css/AdminLTE.min.css',
+        'dist/css/skins/skin-blue.min.css',
         'plugins/iCheck/all.css',
     ];
     /**

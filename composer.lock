@@ -4,10 +4,10 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "80a8adf27dc1b8352e5a8f5e74303c11",
+    "hash": "3861873cbec9a5df5c2f0a1f98ab6e87",
     "packages": [
         {
-            "name": "bower-asset/adminlte",
+            "name": "almasaeed2010/adminlte",
             "version": "v2.0.2",
             "source": {
                 "type": "git",
@@ -20,7 +20,31 @@
                 "reference": "57fb76966bc7bba09276bffad4cddcde9a311582",
                 "shasum": ""
             },
-            "type": "bower-asset-library"
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abdullah Almsaeed",
+                    "email": "support@almsaeedstudio.com"
+                }
+            ],
+            "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
+            "homepage": "http://almsaeedstudio.com/",
+            "keywords": [
+                "JS",
+                "admin",
+                "back-end",
+                "css",
+                "less",
+                "responsive",
+                "template",
+                "theme",
+                "web"
+            ],
+            "time": "2015-02-25 15:13:11"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -72,43 +96,6 @@
                 "responsive",
                 "web"
             ]
-        },
-        {
-            "name": "bower-asset/font-awesome",
-            "version": "v4.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
-                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "./css/font-awesome.css",
-                    "./fonts/*"
-                ],
-                "bower-asset-ignore": [
-                    "*/.*",
-                    "*.json",
-                    "src",
-                    "*.yml",
-                    "Gemfile",
-                    "Gemfile.lock",
-                    "*.md"
-                ]
-            },
-            "license": [
-                "OFL-1.1",
-                "MIT",
-                "CC-BY-3.0"
-            ],
-            "description": "Font Awesome"
         },
         {
             "name": "bower-asset/jquery",
@@ -369,6 +356,54 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "fortawesome/font-awesome",
+            "version": "v4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+                "shasum": ""
+            },
+            "require-dev": {
+                "jekyll": "1.0.2",
+                "lessc": "1.4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OFL-1.1",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Gandy",
+                    "email": "dave@fontawesome.io",
+                    "homepage": "http://twitter.com/davegandy",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The iconic font and CSS framework",
+            "homepage": "http://fontawesome.io/",
+            "keywords": [
+                "FontAwesome",
+                "awesome",
+                "bootstrap",
+                "font",
+                "icon"
+            ],
+            "time": "2015-01-22 18:09:42"
+        },
+        {
             "name": "imagine/imagine",
             "version": "v0.5.0",
             "source": {
@@ -619,12 +654,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-cropable-image.git",
-                "reference": "35800002c99e4a7b6bde402ac0d564166fff9239"
+                "reference": "81b806e4a6d4b00d03129c37ec6c7406a144d825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/35800002c99e4a7b6bde402ac0d564166fff9239",
-                "reference": "35800002c99e4a7b6bde402ac0d564166fff9239",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-cropable-image/zipball/81b806e4a6d4b00d03129c37ec6c7406a144d825",
+                "reference": "81b806e4a6d4b00d03129c37ec6c7406a144d825",
                 "shasum": ""
             },
             "require": {
@@ -657,7 +692,7 @@
                 "jcrop",
                 "yii2"
             ],
-            "time": "2015-02-26 16:49:45"
+            "time": "2015-02-26 18:19:15"
         },
         {
             "name": "maxmirazh33/yii2-uploadable-file",
@@ -665,12 +700,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-uploadable-file.git",
-                "reference": "538e96f459a8cb1f2c982521719d5a173375d0d2"
+                "reference": "aecfc1338fb15d239e1f6aff5fb1b511f0c7e705"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-file/zipball/538e96f459a8cb1f2c982521719d5a173375d0d2",
-                "reference": "538e96f459a8cb1f2c982521719d5a173375d0d2",
+                "url": "https://api.github.com/repos/maxmirazh33/yii2-uploadable-file/zipball/aecfc1338fb15d239e1f6aff5fb1b511f0c7e705",
+                "reference": "aecfc1338fb15d239e1f6aff5fb1b511f0c7e705",
                 "shasum": ""
             },
             "require": {
@@ -699,7 +734,7 @@
                 "file upload",
                 "yii2"
             ],
-            "time": "2015-02-26 16:50:09"
+            "time": "2015-02-26 18:18:38"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1167,7 +1202,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmirazh33/yii2-gii.git",
-                "reference": "8fe35c9952e2163ac3e304c228bc463e1a2003cf"
+                "reference": "d591207be043455a112333900858c546b05db230"
             },
             "require": {
                 "yiisoft/yii2": "2.*",
@@ -1199,7 +1234,7 @@
                 "issues": "https://github.com/maxmirazh33/yii2-gii/issues?state=open",
                 "source": "https://github.com/maxmirazh33/yii2-gii"
             },
-            "time": "2015-02-26 17:18:11"
+            "time": "2015-02-27 07:29:04"
         },
         {
             "name": "phpspec/php-diff",
