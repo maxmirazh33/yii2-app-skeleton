@@ -7,7 +7,6 @@ use vova07\imperavi\actions\GetAction;
 use Yii;
 use yii\filters\AccessControl;
 use backend\models\LoginForm;
-use yii\helpers\Url;
 
 class SiteController extends BackendController
 {

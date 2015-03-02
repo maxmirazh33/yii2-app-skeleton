@@ -7,6 +7,8 @@ return [
             'username' => '%%username%%',
             'password' => '%%password%%',
             'charset' => 'utf8',
+            'enableSchemaCache' => true,
+            'schemaCacheDuration' => 0,
         ],
     ],
 ];
